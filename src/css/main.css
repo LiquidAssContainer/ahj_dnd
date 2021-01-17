@@ -1,0 +1,39 @@
+@import 'task-switch.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+[data-switch-section] {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
