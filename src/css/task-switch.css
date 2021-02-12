@@ -1,6 +1,9 @@
 .hometask-switch {
-	position: relative;
-	margin-bottom: 100px;
+  position: relative;
+	margin-bottom: 25px;
+  
+  display: flex;
+  justify-content: center;
 }
 
 .hometask-switch::after {
@@ -18,8 +21,7 @@
 }
 
 .hometask-list {
-	display: flex;
-	max-width: 640px;
+	display: inline-flex;
 	margin: 20px auto 0;
 }
 
@@ -34,7 +36,7 @@
 
 .hometask {
 	box-sizing: border-box;
-	border: 2px solid grey;
+	border: 2px solid #808080;
 	border-radius: 5px;
 	display: block;
 	width: 200px;
@@ -52,4 +54,10 @@
 	background-color: #000;
 	border-color: #000;
 	color: #fff;
+}
+
+[data-switch-section] {
+  margin: 0 auto;
+  padding-top: 50px;
+  /* width: 960px; */
 }

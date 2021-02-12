@@ -11,17 +11,49 @@
 <body>
   <section class="hometask-switch">
     <ul class="hometask-list">
-      <li class="hometask-item"><a href="" class="hometask" data-switch-link="trello">Trello</a></li>
-      <li class="hometask-item"><a href="" class="hometask" data-switch-link="image-manager">Modern Image Manager</a></li>
-      <li class="hometask-item"><a href="" class="hometask" data-switch-link="download-manager">Download Manager</a></li>
+      <li class="hometask-item"><a href="" class="hometask" data-switch-link="1">Trello</a></li>
+      <li class="hometask-item"><a href="" class="hometask" data-switch-link="2">Modern Image Manager</a>
+      </li>
+      <li class="hometask-item"><a href="" class="hometask" data-switch-link="3">Download Manager</a>
+      </li>
     </ul>
   </section>
 
-  <section class="popover-section hidden" data-switch-section="popovers"></section>
+  <section class="trello_section hidden" data-switch-section="1">
+    <h2 class="trello_header">Trello</h2>
+    <div class="trello_container">
+      <article class="trello-column">
+        <header class="column_head">
+          <h3 class="column_header">TODO</h3>
+          <!-- <button class="column_edit"></button> -->
+        </header>
+        <div class="column_tasks" id="todo"></div>
+        <button class="column_add-button" data-category="todo">Add another card</button>
+      </article>
 
-  <section class="list-editor-section hidden" data-switch-section="list-editor"></section>
+      <article class="trello-column">
+        <header class="column_head">
+          <h3 class="column_header">In progress</h3>
+          <!-- <button class="column_edit"></button> -->
+        </header>
+        <div class="column_tasks" id="in-progress"></div>
+        <button class="column_add-button" data-category="in-progress">Add another card</button>
+      </article>
 
-  <section class="trip-calendar-section hidden" data-switch-section="trip-calendar"></section>
+      <article class="trello-column">
+        <header class="column_head">
+          <h3 class="column_header">Done</h3>
+          <!-- <button class="column_edit"></button> -->
+        </header>
+        <div class="column_tasks" id="done"></div>
+        <button class="column_add-button" data-category="done">Add another card</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="image-manager_section hidden" data-switch-section="2"></section>
+
+  <section class="download-manager_section hidden" data-switch-section="3"></section>
 </body>
 
 </html>
