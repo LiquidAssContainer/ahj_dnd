@@ -1,6 +1,4 @@
 body.grab {
-  /* в какой-то момент почему-то перестало работать */
-  cursor: -webkit-grabbing;
   cursor: grabbing;
   overflow-x: hidden;
 }
@@ -42,7 +40,7 @@ body.grab {
   padding: 5px 0;
 }
 
-.trello_task_container:not(.grabbed):hover {
+body:not(.grab) .trello_task_container:hover {
   cursor: grab;
 }
 
@@ -106,7 +104,6 @@ body.grab {
   position: absolute;
   z-index: 999;
   pointer-events: none;
-  /* cursor: grabbing; */
 }
 
 .blank_wrapper {
