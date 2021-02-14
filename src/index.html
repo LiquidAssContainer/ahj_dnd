@@ -51,7 +51,15 @@
     </div>
   </section>
 
-  <section class="image-manager_section hidden" data-switch-section="2"></section>
+  <section class="image-manager_section hidden" data-switch-section="2">
+    <form id="image-form">
+      <label class="image-form_label">
+        <input class="image-form_input" id="file-input" type="file" accept="image/jpeg, image/png, image/gif">
+        <span class="image-form_label_text">Drag and Drop files here or Click to select</span>
+      </label>
+    </form>
+    <div class="image-gallery"></div>
+  </section>
 
   <section class="download-manager_section hidden" data-switch-section="3"></section>
 </body>
